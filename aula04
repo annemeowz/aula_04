@@ -1,0 +1,71 @@
+Criar na pasta SRC = model e view
+
+//App Java
+
+import model.Cliente;
+import model.Pessoa;
+
+public class App {
+public static void main(String[] args) throws Exception{
+    Cliente paulo = new Cliente();
+    paulo.setCodigo((byte)1);
+    paulo.setPontosDeFidelidade((short) 1500);
+
+   }
+}
+
+//--------------------------------------------------------
+//Cliente
+
+package model;
+
+public class Cliente extends Cliente {
+     private short pontosDeFidelidade;
+
+     public short getPontosDeFidelidade() {
+         return this.pontosDeFidelidade;
+        }
+  public void setPontosDeFidelidade(short
+  pontosDeFidelidade) {
+    this.pontosDeFidelidade = pontosDeFidelidade;
+  }
+    
+}
+-------------------------------------------
+//Pessoa
+
+
+package model; 
+
+public abstract class Cliente {
+   protected byte codigo; "codigo": Unknown word.
+   protected String nome;
+   protected String cpf;
+
+   //Métodos assesores
+
+   //Getters
+    public byte getCodigo() { "Codigo": Unknown
+        return this.codigo; "codigo": Unknown
+   }
+    public String getNome() {
+        return this.nome;
+
+    public String getCpf() {
+        return this.cpf;
+    
+    }
+   //Setters
+   public void setCodigo(byte codigo) { "Codigo": Unknown
+   this.codigo = codigo; "codigo"; Unknown word.
+   }
+
+public void setNome(String nome) {
+     this.nome = nome;
+   }
+
+public void setCpf(String cpf) {
+this.cpf = cpf;
+
+   }
+}
